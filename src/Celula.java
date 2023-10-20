@@ -4,11 +4,11 @@ public class Celula {
     private int x, y;
     private double concentracaoHelio = 0.0;
     private double[] limiteErroConcetracao = new double[] { 0.02, 0.02 };;
-    private double rugosidaeTerreno = 1.0;;
+    private double rugosidadeTerreno = 1.0;;
     public void Cell() {
         this.concentracaoHelio = random.nextDouble(1);
         this.limiteErroConcetracao = new double[]{random.nextDouble(0, 0.1)};
-        this.rugosidaeTerreno = random.nextDouble(1);
+        this.rugosidadeTerreno = random.nextDouble(1);
     }
 
     public double getHeliumConcetration() {
@@ -19,8 +19,8 @@ public class Celula {
         return this.limiteErroConcetracao;
     }*/
 
-    public double getrugosidaeTerreno(int x, int y) {
-        return this.rugosidaeTerreno;
+    public double getRugosidadeTerreno(int x, int y) {
+        return this.rugosidadeTerreno;
     }
 
 }

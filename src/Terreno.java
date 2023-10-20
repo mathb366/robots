@@ -25,7 +25,7 @@ public class Terreno {
         }
     }
     //retorna uma celula do terreno
-    public Celula getCelula_terreno(){
+    public Celula getCelulaTerreno(){
 
     }
     // Métodos para executar o jogo

@@ -1,10 +1,10 @@
 import java.util.List;
 public class Time {
-    private String NomeTime;
+    private String nomeTime;
     private List<Robo> robos;
 
     public String getNomeTime() {
-        return this.NomeTime;
+        return this.nomeTime;
     }
     public List<Robo> getNomesParticipantes() {
         return this.robos;
