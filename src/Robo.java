@@ -1,20 +1,30 @@
 public class Robo {
     private int x, y;
-    private String nomeTime;
+    private int direcao;
     private int helioColetado;
-
-    public void robo(int x, int y, String nomeTime) {
+    public Robo(int x, int y, int direcao) {
         this.x = x;
         this.y = y;
-        this.nomeTime = nomeTime;
-        this.helioColetado = 0;
+        this.direcao = direcao;
     }
 
-    public int getPosicaoXRobo(){
+    public int getPosicaoXRobo() {
         return this.x;
     }
-
     public int getPosicaoYRobo(){
         return this.y;
+    }
+
+    public int getDirecao() {
+        return direcao;
+    }
+    class ControladorRobo {
+        private Robo robo;
+        private Terreno terreno;
+
+        public ControladorRobo(Robo robo, Terreno terreno) {
+            this.robo = robo;
+            this.terreno = terreno;
+        }
     }
 }
