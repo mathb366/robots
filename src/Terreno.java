@@ -33,4 +33,8 @@ public class Terreno {
     public Celula[][] getCelulaTerreno() {
         return terreno;
     }
+
+    public int getTamanho(){
+        return larguraTerreno;
+    }
 }
